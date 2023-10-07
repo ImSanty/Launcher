@@ -1,0 +1,124 @@
+.root {
+  -fx-background-color: linear-gradient(from 0% 74% to 0% 73.99%, #131313, #1e1e1e);
+}
+
+#downloadButton {
+  -fx-background-image: url("/santiaguero/assets/button.png");
+  -fx-background-color: linear-gradient(from 0% 43% to 0% 42.99%, #131313, #1e1e1e);
+  -fxbackground-repeat: no-repeat;
+  -fx-background-size: 342 59;
+  -fx-background-position: center center;
+  -fx-cursor: hand;
+}
+#downloadButton:hover {
+  -fx-background-image: url("/santiaguero/assets/buttonHover.png");
+}
+
+#downloadButton:focused {
+  -fx-background-image: url("/santiaguero/assets/buttonFucused.png");
+  -fx-scale-x: 0.97px;
+  -fx-scale-y: 0.97px;
+}
+
+#forgeVersion {
+  -fx-background-color: #131313;
+  -fx-highlight-fill: #008542;	
+  -fx-border-color: #008542; 
+  -fx-border-radius: 3px; 
+  -fx-border-width: 2px; 
+  -fx-text-fill: white;
+}
+#forgeVersion:hover {
+  -fx-background-color: #0E0E0E;
+}
+#forgeVersion:focused {
+  -fx-border-color: white; 
+  -fx-border-radius: 3px; 
+  -fx-border-width: 2px; 
+}
+
+#console {
+  -fx-control-inner-background: #303030;
+  -fx-highlight-fill: #008542;	
+  -fx-faint-focus-color: transparent;
+  -fx-background-color: #303030;
+  -fx-border-color: #008542;
+  -fx-border-radius: 2px;
+  -fx-border-width: 2px;
+}
+
+#console .scroll-bar:vertical {
+  -fx-background-color: #1e1e1e; /* Replace with your preferred color */
+}
+
+#console .scroll-bar:horizontal {
+  -fx-background-color: #1e1e1e; /* Replace with your preferred color */
+}
+
+#console .scroll-bar .increment-button,
+#console .scroll-bar .decrement-button,
+#console .scroll-bar .thumb {
+  -fx-background-color: #2c2c2c; /* Replace with your preferred color */
+}
+
+#console .scroll-bar .thumb:hover {
+  -fx-background-color: #3a3a3a; /* Replace with your preferred color on hover */
+}
+
+CheckBox {
+  -fx-font-size: 11px;
+  -fx-text-fill: white;
+}
+CheckBox .box {
+  -fx-background-color: #262626;
+  -fx-border-color: #515151;
+	-fx-border-radius: 0px;
+  -fx-border-width: 2px;
+}
+CheckBox:selected .box {
+  -fx-background-color: -fx-box-border, #008542;
+  -fx-background-insets: 1;
+  -fx-border-color: transparent;
+}
+CheckBox:selected .box .mark {
+  -fx-background-color: white;
+}
+CheckBox:selected:hover .box {
+  -fx-background-color: #0DD166;
+}
+CheckBox:hover .box {
+  -fx-background-color: #464646;
+}
+CheckBox:focused .box {
+  -fx-border-color: white;
+  -fx-border-radius: 0px;
+  -fx-border-width: 2px;
+}
+
+#progressBar .bar {
+  -fx-background-color: #008542;
+  -fx-background-insets: 2;
+  -fx-border-color:  transparent;
+  -fx-border-radius: 0;
+  -fx-border-width: 2px;
+}
+
+#progressBar .track {
+  -fx-background-color: #0E0E0E;
+  -fx-background-insets: 2;
+  -fx-border-color: transparent;
+}
+
+Line {
+  -fx-stroke: #5b5b5b;
+  -fx-stroke-width: 1;
+}
+
+#copyright {
+  -fx-font-size: 12px;
+  -fx-text-fill: white; /* Text color */
+}
+#copyright:hover {
+  -fx-font-size: 12px;
+  -fx-text-fill: rgb(180, 180, 180); /* Text color */
+}
