@@ -15,7 +15,7 @@
    <children>
       <AnchorPane prefHeight="400.0" prefWidth="600.0">
          <children>
-            <ProgressBar fx:id="progressBar" layoutX="25.0" layoutY="336.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="36.0" prefWidth="550.0" progress="0.0" />
+            <ProgressBar fx:id="progressBar" layoutX="25.0" layoutY="337.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="36.0" prefWidth="550.0" progress="0.0" />
             <TextArea fx:id="console" editable="false" layoutX="25.0" layoutY="71.0" prefHeight="190.0" prefWidth="550.0" wrapText="true" />
             <TextField fx:id="forgeVersion" layoutX="25.0" layoutY="34.0" prefHeight="29.0" prefWidth="180.0" text="1.20.1-47.1.0" />
             <Button fx:id="downloadButton" layoutX="130.0" layoutY="271.0" maxHeight="58.0" maxWidth="342.0" minHeight="58.0" minWidth="342.0" mnemonicParsing="false" onAction="#downloadClicked" prefHeight="58.0" prefWidth="342.0">
@@ -34,6 +34,7 @@
             <CheckBox fx:id="checkboxMods" layoutX="522.0" layoutY="39.0" mnemonicParsing="false" selected="true" text="Mods" />
             <Line endY="30.0" layoutX="220.0" layoutY="31.0" startY="6.0" />
             <Line endY="30.0" layoutX="425.0" layoutY="31.0" startY="6.0" />
+            <Label fx:id="mbCount" layoutX="37.0" layoutY="346.0" prefHeight="17.0" prefWidth="529.0" textFill="WHITE" />
          </children>
       </AnchorPane>
    </children>

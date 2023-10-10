@@ -27,7 +27,7 @@ public class Launcher extends Application {
       primaryStage.getIcons()
           .add(new Image(getClass().getClassLoader().getResourceAsStream("santiaguero/assets/icon.png")));
 
-      primaryStage.setTitle("Launcher (Alpha - 000013)");
+      primaryStage.setTitle("Launcher (Alpha - 000023)");
       primaryStage.setResizable(false);
       scene.getStylesheets()
           .addAll(this.getClass().getResource("styles/style.css").toExternalForm());

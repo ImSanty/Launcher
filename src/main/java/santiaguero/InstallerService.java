@@ -1,5 +1,6 @@
 package santiaguero;
 
+import javafx.application.Platform;
 import javafx.concurrent.Service;
 import javafx.concurrent.Task;
 import javafx.scene.control.TextArea;
@@ -51,6 +52,9 @@ public class InstallerService extends Service<Void> {
           launcherController.checkboxForge.setDisable(false);
           launcherController.checkboxMods.setDisable(false);
           launcherController.progressBar.setProgress(0);
+          Platform.runLater(() -> {
+            launcherController.mbCount.setText("");
+          });
         } else {
           logQueue.add("Error: Forge installation may have encountered an issue. Exit code: " + exitCode);
           updateMessage("Error: Forge installation may have encountered an issue. Exit code: " + exitCode);
