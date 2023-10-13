@@ -29,12 +29,13 @@ public class LauncherController implements GithubDownloadService.DownloadCallbac
   public boolean Mods = true;
 
   private ConsoleManager consoleManager;
+  UpdateChecker updateChecker = new UpdateChecker();
 
   @FXML
-  private void initialize() {
+  public void initialize(String forgeVersionCkecker) {
     console.setEditable(false);
     forgeVersion.setDisable(true);
-    forgeVersion.setEditable(false);
+    forgeVersion.setText(forgeVersionCkecker);
     new CheckboxManager(checkboxRecomended, checkboxCustom, checkboxForge, checkboxMods, this);
 
     // Console logs

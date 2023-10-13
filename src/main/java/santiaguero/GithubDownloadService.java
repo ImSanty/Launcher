@@ -19,7 +19,7 @@ import javafx.scene.control.ProgressBar;
 import javafx.scene.control.TextArea;
 
 public class GithubDownloadService {
-  private static final String PERSONAL_ACCESS_TOKEN = "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";
+  private static final String PERSONAL_ACCESS_TOKEN = "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";
   private static double repoDownloadSize = 0;
   static double repoTotalDownloadSize = 0;
 

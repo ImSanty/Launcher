@@ -17,7 +17,7 @@
          <children>
             <ProgressBar fx:id="progressBar" layoutX="25.0" layoutY="337.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="36.0" prefWidth="550.0" progress="0.0" />
             <TextArea fx:id="console" editable="false" layoutX="25.0" layoutY="71.0" prefHeight="190.0" prefWidth="550.0" wrapText="true" />
-            <TextField fx:id="forgeVersion" layoutX="25.0" layoutY="34.0" prefHeight="29.0" prefWidth="180.0" text="1.20.1-47.1.0" />
+            <TextField fx:id="forgeVersion" layoutX="25.0" layoutY="34.0" prefHeight="29.0" prefWidth="180.0" />
             <Button fx:id="downloadButton" layoutX="130.0" layoutY="271.0" maxHeight="58.0" maxWidth="342.0" minHeight="58.0" minWidth="342.0" mnemonicParsing="false" onAction="#downloadClicked" prefHeight="58.0" prefWidth="342.0">
             </Button>
             <Label fx:id="copyright" layoutX="237.0" layoutY="376.0" prefHeight="20.0" prefWidth="126.0" text="With ❤ by SantiAgüero" textFill="WHITE">

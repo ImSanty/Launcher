@@ -20,14 +20,27 @@ public class Launcher extends Application {
   @Override
   public void start(Stage primaryStage) throws Exception {
     try {
+      // Create an instance of UpdateChecker
+      UpdateChecker updateChecker = new UpdateChecker();
+
+      // Access variables from UpdateChecker
+      String localVersion = updateChecker.localVersion;
+      String forgeVersionCkecker = updateChecker.forgeVersionCkecker();
+
       FXMLLoader loader = new FXMLLoader(getClass().getResource("styles/Launcher.fxml"));
       StackPane root = loader.load();
+
+      // Pass the decoded content to the controller, assuming your controller has a
+      // method to set this value
+      LauncherController controller = loader.getController();
+      controller.initialize(forgeVersionCkecker);
+
       Scene scene = new Scene(root, 600, 400);
 
       primaryStage.getIcons()
           .add(new Image(getClass().getClassLoader().getResourceAsStream("santiaguero/assets/icon.png")));
 
-      primaryStage.setTitle("Launcher (Alpha - 000023)");
+      primaryStage.setTitle("Launcher - Alpha " + localVersion);
       primaryStage.setResizable(false);
       scene.getStylesheets()
           .addAll(this.getClass().getResource("styles/style.css").toExternalForm());
