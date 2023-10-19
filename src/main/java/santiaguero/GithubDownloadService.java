@@ -19,7 +19,7 @@ import javafx.scene.control.ProgressBar;
 import javafx.scene.control.TextArea;
 
 public class GithubDownloadService {
-  private static final String PERSONAL_ACCESS_TOKEN = "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";
+  private static final String TOKEN = "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";
   private static double repoDownloadSize = 0;
   static double repoTotalDownloadSize = 0;
 
@@ -43,7 +43,7 @@ public class GithubDownloadService {
       ProgressBar progressBar, Label mbCount, TextArea console, DownloadCallback callback)
       throws URISyntaxException {
     GitHubClient client = new GitHubClient();
-    client.setOAuth2Token(PERSONAL_ACCESS_TOKEN);
+    client.setOAuth2Token(TOKEN);
 
     ContentsService contentsService = new ContentsService(client);
 
@@ -93,7 +93,7 @@ public class GithubDownloadService {
       ProgressBar progressBar, Label mbCount, TextArea console, DownloadCallback callback)
       throws URISyntaxException {
     GitHubClient client = new GitHubClient();
-    client.setOAuth2Token(PERSONAL_ACCESS_TOKEN);
+    client.setOAuth2Token(TOKEN);
 
     try {
       // Construct the raw URL manually

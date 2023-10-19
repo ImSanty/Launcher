@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>C:\Users\santi\Desktop\Launcher.jar</jar>
+  <outfile>C:\Users\santi\Desktop\Launcher.exe</outfile>
+  <errTitle>Descarga Java para ejecutar el programa :)</errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>https://www.azul.com/core-post-download/?endpoint=zulu&amp;uuid=137583c2-1e3a-4b47-86e0-95f6940b7785</downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>C:\Cosas\JavaPrograms\Programas\Launcher\src\main\java\santiaguero\assets\icon.ico</icon>
+  <jre>
+    <path>%JAVA_HOME%;%PATH%</path>
+    <requiresJdk>false</requiresJdk>
+    <requires64Bit>false</requires64Bit>
+    <minVersion>1.21</minVersion>
+    <maxVersion></maxVersion>
+  </jre>
+  <versionInfo>
+    <fileVersion>0.0.2.6</fileVersion>
+    <txtFileVersion>0.0.2.6-Alpha</txtFileVersion>
+    <fileDescription>Launcher</fileDescription>
+    <copyright>© 2023 ImSanty - All Rights Reserved ©</copyright>
+    <productVersion>0.0.2.6</productVersion>
+    <txtProductVersion>0.0.2.6-Alpha</txtProductVersion>
+    <productName>Launcher</productName>
+    <companyName>ImSanty</companyName>
+    <internalName>santiaguero.launcher</internalName>
+    <originalFilename>Launcher.exe</originalFilename>
+    <trademarks></trademarks>
+    <language>ENGLISH_US</language>
+  </versionInfo>
+</launch4jConfig>
